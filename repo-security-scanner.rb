@@ -16,11 +16,10 @@ class RepoSecurityScanner < Formula
 
   def install
     ENV["GOPATH"] = buildpath
-    ENV["GITHUB_WEBHOOKSECRET"]
-    ENV.prepend_create_path "PATH", "#{buildpath}/bin"
-    dir = "#{buildpath}/src/github.com/UKHomeOffice/repo-security-scanner"
-    dir.install buildpath.children - ["#{buildpath}/.brew_home"]
-
+    ENV.prepend_create_path "PATH", buildpath/"bin"
+    dir = buildpath/"src/github.com/UKHomeOffice/repo-security-scanner"
+    dir.install buildpath.children - [buildpath/".brew_home"]
+    
     cd dir do
       system "make", "deps"
       system "go", "get", "-v"
