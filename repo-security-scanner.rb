@@ -32,4 +32,11 @@ class RepoSecurityScanner < Formula
   test do
     system "scanrepo", "--help"
   end
+
+  def caveats
+    """
+Usage:
+    git log -p | scanrepo
+"""
+  end
 end
