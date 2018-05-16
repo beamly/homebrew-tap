@@ -3,26 +3,26 @@ class OneloginAwsCli < Formula
 
   desc "Assume an AWS Role and cache credentials using Onelogin"
   homepage "https://github.com/physera/onelogin-aws-cli"
-  url "https://github.com/physera/onelogin-aws-cli/archive/v1.9.tar.gz"
-  sha256 "5f12556f07f00800bf4853425021affdb18e1c59c41927f419fe132d6b0e8a89"
+  url "https://github.com/physera/onelogin-aws-cli/archive/v1.11.tar.gz"
+  sha256 "c1cca25b43c76eb44d15c9d737d26b354fbeae19a2bac8add0ecd64470c9cdbb"
 
   depends_on "python@3"
 
 
   # Generated with poet -r onelogin-aws-cli
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/3c/6c/00b00fadb060b8baeb666999807d7ce85d194aedcfb2e09b149b2392bae3/boto3-1.7.1.tar.gz"
-    sha256 "91348d9e5c33c2c1aaaa238a3e97be4834c1aff85082ef6d9b249814be20bab4"
+    url "https://files.pythonhosted.org/packages/c3/94/c4acda8f638697ad75ea92b6f256af4b21b69f44a8d42d33cfba68cb20f1/boto3-1.7.4.tar.gz"
+    sha256 "a56b21efbc994580fc9cef454f0f949745c152326f939aed6609d1c47b2a0f8f"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/0b/3e/7a2299870d01611e221648484146bed16da2bc69fb256d4b2669c26fea32/botocore-1.10.1.tar.gz"
-    sha256 "bc1e6c36b1b570462e3b688b3bd3ba662e521cc21ce0a860f85f877179af77c7"
+    url "https://files.pythonhosted.org/packages/3c/48/fc6df53b42480e84965f3a46fe6f746bf4c83e6c982487907f641a6815fc/botocore-1.10.4.tar.gz"
+    sha256 "5602738392ecde5c02a06a3b02de07171f440a44cdfef0aadff4b59567359607"
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/15/d4/2f888fc463d516ff7bf2379a4e9a552fef7f22a94147655d9b1097108248/certifi-2018.1.18.tar.gz"
-    sha256 "edbc3f203427eef571f79a7692bb160a2b0f7ccaa31953e99bd17e307cf63f7d"
+    url "https://files.pythonhosted.org/packages/4d/9c/46e950a6f4d6b4be571ddcae21e7bc846fcbb88f1de3eff0f6dd0a6be55d/certifi-2018.4.16.tar.gz"
+    sha256 "13e698f54293db9f89122b0581843a782ad0934a4fe0172d2a980ba77fc61bb7"
   end
 
   resource "chardet" do
@@ -66,8 +66,8 @@ class OneloginAwsCli < Formula
   end
 
   resource "onelogin" do
-    url "https://files.pythonhosted.org/packages/fb/c0/0a9cdcaa05bf13e40276c5e577d8d1bbc1ad742b4c70026e4ece80cc0a6c/onelogin-1.2.1.tar.gz"
-    sha256 "8d5ae5c6739346185ae0740aee97253d248790138e9ff0715f710d9132728a57"
+    url "https://files.pythonhosted.org/packages/82/82/5a6ec69f9b9da5a013d9ac6b31a04bc38396785298838d4918563867769d/onelogin-1.3.0.tar.gz"
+    sha256 "61e7af3434532265ba92e5fc30a33533462aac9df5631afe4ef92a934ebdf13e"
   end
 
   resource "onelogin-aws-cli" do
