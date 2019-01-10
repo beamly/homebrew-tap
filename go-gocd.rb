@@ -1,9 +1,9 @@
 class GoGocd < Formula
   desc "CLI interface for ThoughtWorks GoCD"
   homepage "https://github.com/beamly/terraform-provider-gocd"
-  url "https://github.com/beamly/go-gocd/releases/download/0.7.2/gocd-0.7.2-darwin-x86_64.zip"
-  version "0.7.2"
-  sha256 "37058406371f88b3e463b35a1bee419902c46a62cde72096b11a1bf71f601376"
+  url "https://github.com/beamly/go-gocd/releases/download/0.7.3/gocd-0.7.3-darwin-x86_64.zip"
+  version "0.7.3"
+  sha256 "fcd665b693491c3e1d7d7ad8b1bde9757ab1b4673a9319142e80f6e2edbaa4d8"
   
   depends_on "drewsonne/homebrew-tap/tf-install-provider"
 
