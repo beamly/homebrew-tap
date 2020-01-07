@@ -2,16 +2,16 @@
 class TerraformProviderGocd < Formula
   desc "Terraform Provider for ThoughtWorks GoCD"
   homepage "https://github.com/beamly/terraform-provider-gocd"
-  version "1.0.6"
+  version "1.0.7"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/beamly/terraform-provider-gocd/releases/download/1.0.6/terraform-provider-gocd-1.0.6-darwin-amd64.zip"
-    sha256 "075786c26fab303061ddda71c7f3970e4cd8a128a2347b6ab6c13b8f78b74cde"
+    url "https://github.com/beamly/terraform-provider-gocd/releases/download/1.0.7/terraform-provider-gocd-1.0.7-darwin-amd64.zip"
+    sha256 "8d3ba7eaf3b6b6b65acba5e30ef5602a813db6f1a58c8886707022e626658ee8"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/beamly/terraform-provider-gocd/releases/download/1.0.6/terraform-provider-gocd-1.0.6-linux-amd64.tar.gz"
-      sha256 "2d9b0da8ff1836f7dad8639f680e2b3821cf372b2cb5301a0196d70968bb2ad9"
+      url "https://github.com/beamly/terraform-provider-gocd/releases/download/1.0.7/terraform-provider-gocd-1.0.7-linux-amd64.tar.gz"
+      sha256 "0a9effb289073462f24537061d0c373d7608b463a02f9889f556dea2c8653fac"
     end
   end
   
