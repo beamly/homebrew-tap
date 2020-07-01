@@ -2,16 +2,16 @@
 class GoGocd < Formula
   desc "CLI interface for ThoughtWorks GoCD"
   homepage "https://github.com/beamly/terraform-provider-gocd"
-  version "0.7.14"
+  version "0.7.18"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/beamly/go-gocd/releases/download/0.7.14/gocd-0.7.14-darwin-x86_64.zip"
-    sha256 "2138401154d3b575e26f7145b76783997825286ec40ab9788c7a495c072d2a70"
+    url "https://github.com/beamly/go-gocd/releases/download/0.7.18/gocd-0.7.18-darwin-x86_64.zip"
+    sha256 "9d9e9b61e8bf5cfcfe4b9c00ae36b32e601e5ddc5a1a1c27dc10f9f4c405ab56"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/beamly/go-gocd/releases/download/0.7.14/gocd-0.7.14-linux-x86_64.tar.gz"
-      sha256 "0600ad5d6662261f92a64a91e62d8bcf35718eb9963b5cb29503cdb6755a5d3c"
+      url "https://github.com/beamly/go-gocd/releases/download/0.7.18/gocd-0.7.18-linux-x86_64.tar.gz"
+      sha256 "9cca4d2ac85e8e212d32a5c59cf16f7ed4cee4428077502a2aba6a6fc28deac5"
     end
   end
   
