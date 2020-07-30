@@ -6,7 +6,8 @@ class OneloginAwsCli < Formula
   url "https://github.com/physera/onelogin-aws-cli/archive/v1.11.tar.gz"
   sha256 "c1cca25b43c76eb44d15c9d737d26b354fbeae19a2bac8add0ecd64470c9cdbb"
 
-  depends_on "python@3"
+  # Pin to python3.7, because https://github.com/physera/onelogin-aws-cli/issues/143
+  depends_on "python@3.7"
 
 
   # Generated with poet -r onelogin-aws-cli
