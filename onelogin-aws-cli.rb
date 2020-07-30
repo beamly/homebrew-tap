@@ -61,10 +61,10 @@ class OneloginAwsCli < Formula
     sha256 "846c9c709ee1203bac5444abec19b5228f4601377686f33cba672aa0ba313abd"
   end
 
-  resource "lxml" do
-    url "https://files.pythonhosted.org/packages/20/b3/9f245de14b7696e2d2a386c0b09032a2ff6625270761d6543827e667d8de/lxml-3.8.0.tar.gz"
-    sha256 "736f72be15caad8116891eb6aa4a078b590d231fdc63818c40c21624ac71db96"
-  end
+  #resource "lxml" do
+  #  url "https://files.pythonhosted.org/packages/20/b3/9f245de14b7696e2d2a386c0b09032a2ff6625270761d6543827e667d8de/lxml-3.8.0.tar.gz"
+  #  sha256 "736f72be15caad8116891eb6aa4a078b590d231fdc63818c40c21624ac71db96"
+ # end
 
   resource "onelogin" do
     url "https://files.pythonhosted.org/packages/82/82/5a6ec69f9b9da5a013d9ac6b31a04bc38396785298838d4918563867769d/onelogin-1.3.0.tar.gz"
